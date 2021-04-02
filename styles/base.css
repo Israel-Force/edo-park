@@ -96,10 +96,9 @@ a {
   color: var(--black);
 }
 
-/* button a:hover {
-  color: var(--white);
+a:hover {
   text-decoration: none;
-} */
+}
 
 .button {
   background-color: #50ad30;

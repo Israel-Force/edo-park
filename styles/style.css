@@ -152,6 +152,19 @@ section.thirdSection ul li p {
 section.thirdSection .carosel {
   width: 100%;
   display: none;
+  position: relative;
+}
+
+section.thirdSection .carosel .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 /* fourthSECTION */
@@ -363,7 +376,7 @@ section.seventhSection .news-card a {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   /* global */
   .row {
     flex-direction: row !important;
@@ -457,7 +470,7 @@ section.seventhSection .news-card a {
 
   section.secondSection .row {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   section.secondSection .row .box p {
@@ -526,7 +539,7 @@ section.seventhSection .news-card a {
   }
   section.fourthSection .row {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 4rem;
   }
 
