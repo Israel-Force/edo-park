@@ -1,0 +1,30 @@
+@import "./base.css";
+
+/* success page */
+main.success {
+  padding: 4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(80, 173, 48, 0) 0%,
+    rgba(80, 173, 48, 0.11) 100%
+  );
+  color: var(--black);
+}
+
+main.success .txt h1 {
+  text-align: center;
+}
+
+main.success header h1 {
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  /* success page */
+  main.success {
+    padding: 8rem;
+  }
+  main.success header h1 {
+    font-size: 3em;
+  }
+}
